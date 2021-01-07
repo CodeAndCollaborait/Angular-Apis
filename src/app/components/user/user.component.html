@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="display-5">Customer Data</h2>
+  <div class="card" style="width: 28rem" *ngFor="let user of usersList">
+    <div style="background: lightblue" class="card-body">
+      <h5 class="card-title">{{ user.name }}</h5>
+      <p class="card-text">ID: {{ user.id }}</p>
+      <p class="card-text">Name: {{ user.username }}</p>
+      <p class="card-text">Phone: {{ user.phone }}</p>
+      <p class="card-text">Website: {{ user.website }}</p>
+    </div>
+    <hr />
+  </div>
+</div>
